@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/teste.css">
+
+</head>
+
+<body>
+  
+<div class="container">
+
+<button type="button" onclick="Mudarestado('div1'); Mudarestado2('div2')" id="cadastrar">Cadastrar</button>
+
+<div id="div1">
+Cadastrar
+</div>
+
+<div id="div2">
+    Logar
+</div>
+
+
+</div>
+<script>
+
+
+
+
+    function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display === "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    function Mudarestado2(el) {
+        var display = document.getElementById(el).style.display;
+        if(display === "block")
+            document.getElementById(el).style.display = 'none';
+        else
+            document.getElementById(el).style.display = 'block';
+    }
+    
+</script>
+
+
+<!-- <input type="text" 
+   onkeypress="return event.charCode >= 48 && event.charCode <= 57"> -->
+</body>
+
+</html>
